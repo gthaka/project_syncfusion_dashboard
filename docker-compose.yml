@@ -1,0 +1,11 @@
+# version is now using "compose spec"
+# v2 and v3 are now combined!
+# docker-compose v1.27+ required
+
+services:
+  project-sync-dash:
+    build: .
+    # use nodemon rather than node for local dev
+    # command: npm start
+    ports:
+      - "5001:80"
